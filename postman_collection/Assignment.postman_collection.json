@@ -1,0 +1,366 @@
+{
+	"info": {
+		"_postman_id": "f3240b2e-8961-4ad8-8f40-fe194ea67cec",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload Csv Records",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5200/post_data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5200",
+					"path": [
+						"post_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view records",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/RahulMadhavi/Test_App/Customer Dataset - Sheet1.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5200/records",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5200",
+					"path": [
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distinct Banks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/RahulMadhavi/Test_App/Customer Dataset - Sheet1.csv",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5200/banks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5200",
+					"path": [
+						"banks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account_holder_name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/RahulMadhavi/Test_App/Customer Dataset - Sheet1.csv",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5200/banks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5200",
+					"path": [
+						"banks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transaction_count_summary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/RahulMadhavi/Test_App/Customer Dataset - Sheet1.csv",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5200/transaction_summary",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5200",
+					"path": [
+						"transaction_summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transaction_amount_summary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/RahulMadhavi/Test_App/Customer Dataset - Sheet1.csv",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5200/transaction_amount_summary",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5200",
+					"path": [
+						"transaction_amount_summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Transaction Amount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/RahulMadhavi/Test_App/Customer Dataset - Sheet1.csv",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5200/total_transaction_amount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5200",
+					"path": [
+						"total_transaction_amount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dynamic_start_end_date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/RahulMadhavi/Test_App/Customer Dataset - Sheet1.csv",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5200/2022-01-01/2022-08-01",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5200",
+					"path": [
+						"2022-01-01",
+						"2022-08-01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "<Test>detail transactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/RahulMadhavi/Test_App/Customer Dataset - Sheet1.csv",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5200/total_transaction_amount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5200",
+					"path": [
+						"total_transaction_amount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "<Test>Transpose",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/RahulMadhavi/Test_App/Customer Dataset - Sheet1.csv",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5200/2022-01-01/2022-08-01",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5200",
+					"path": [
+						"2022-01-01",
+						"2022-08-01"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
